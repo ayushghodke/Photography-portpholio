@@ -36,8 +36,12 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
-                    <Button variant="primary" className="!py-2 !px-6 text-sm uppercase tracking-wide">
-                        Hire Me
+                    <Button
+                        variant="primary"
+                        className="!py-2 !px-6 text-sm uppercase tracking-wide"
+                        onClick={() => window.location.href = '#contact'}
+                    >
+                        Contact Me
                     </Button>
                 </div>
 
@@ -61,8 +65,12 @@ const Navbar = () => {
                                 {link.name}
                             </a>
                         ))}
-                        <Button variant="primary" className="w-full text-center" onClick={() => setIsOpen(false)}>
-                            Hire Me
+                        <Button
+                            variant="primary"
+                            className="w-full text-center"
+                            onClick={() => { setIsOpen(false); window.location.href = '#contact'; }}
+                        >
+                            Contact Me
                         </Button>
                     </motion.div>
                 )}
