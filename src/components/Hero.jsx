@@ -20,7 +20,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-5xl md:text-7xl lg:text-9xl font-black text-white uppercase leading-none tracking-tighter mb-6 drop-shadow-2xl"
+                    className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white uppercase leading-none tracking-tighter mb-6 drop-shadow-2xl px-4"
                 >
                     Digital Creator <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">& Photographer</span>

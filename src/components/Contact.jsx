@@ -59,13 +59,13 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="pt-8 border-t border-gray-800 mt-8">
+                        <div className="pt-8 border-t border-gray-800 mt-8 relative z-10">
                             <h4 className="font-bold text-gray-300 mb-4 text-center">Follow Me</h4>
                             <div className="flex gap-4 justify-center">
-                                <a href="https://www.youtube.com/@Techinair" target="_blank" rel="noopener noreferrer" className="p-4 bg-zinc-900 rounded-full hover:bg-red-600 transition-colors">
+                                <a href="https://www.youtube.com/@Techinair" target="_blank" rel="noopener noreferrer" className="p-4 bg-zinc-900 rounded-full hover:bg-red-600 transition-colors relative z-20">
                                     <FaYoutube size={24} />
                                 </a>
-                                <a href="https://www.instagram.com/tech_in_air_" target="_blank" rel="noopener noreferrer" className="p-4 bg-zinc-900 rounded-full hover:bg-pink-600 transition-colors">
+                                <a href="https://www.instagram.com/tech_in_air_/" target="_blank" rel="noopener noreferrer" className="p-4 bg-zinc-900 rounded-full hover:bg-pink-600 transition-colors relative z-20">
                                     <FaInstagram size={24} />
                                 </a>
                             </div>
