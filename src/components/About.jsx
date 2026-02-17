@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section id="about" className="py-20 bg-black text-white">
             <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-                {/* Image/Visual Side */}
+                {/* Image/Visual Side effects */}
                 <div className="w-full md:w-1/2">
                     <div className="relative aspect-[3/4] rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
                         {/* Using a representative image from the list as a bio pic replacement for now */}
@@ -14,6 +14,7 @@ const About = () => {
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 border-2 border-yellow-500/20 m-4 rounded-lg"></div>
+
                     </div>
                 </div>
 
