@@ -4,6 +4,7 @@ import About from './components/About'
 import Services from './components/Services'
 import ContentCreator from './components/ContentCreator'
 import Gallery from './components/Gallery'
+import CommercialVideo from './components/CommercialVideo'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -14,8 +15,9 @@ function App() {
       <Hero />
       <About />
       <Gallery />
-      <Services />
+      <CommercialVideo />
       <ContentCreator />
+      <Services />
       <Contact />
       <Footer />
     </div>

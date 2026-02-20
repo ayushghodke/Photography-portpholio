@@ -16,9 +16,10 @@ const Navbar = () => {
     }, [])
 
     const navLinks = [
-        { name: 'Motion', href: '#motion' },
+        { name: 'Services', href: '#motion' },
         { name: 'Content', href: '#content' },
-        { name: 'Stills', href: '#stills' },
+        { name: 'Photography', href: '#stills' },
+        { name: 'Commercial', href: '#commercial' },
         { name: 'About', href: '#about' },
     ]
 
