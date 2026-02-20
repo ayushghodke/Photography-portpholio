@@ -6,10 +6,10 @@ const About = () => {
             <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                 {/* Image/Visual Side effects */}
                 <div className="w-full md:w-1/2">
-                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden transition-all duration-500">
                         {/* Using a representative image from the list as a bio pic replacement for now */}
                         <img
-                            src="/images/20260210_135039.webp"
+                            src="/images/ayush-profile.jpg"
                             alt="Ayush Ghodke"
                             className="w-full h-full object-cover"
                         />
