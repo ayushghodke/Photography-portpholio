@@ -26,9 +26,9 @@ const ContentCreator = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="text-gray-400 text-center max-w-xl mx-auto mb-16 text-lg"
+                    className="text-gray-400 text-center max-w-2xl mx-auto mb-16 text-lg"
                 >
-                    I create cinematic content for YouTube &amp; Instagram — from travel films and tech explorations to commercial productions.
+                    I review smartphones, cameras &amp; laptops to help you find the best value-for-money gadgets — and teach you how to take better pictures.
                 </motion.p>
 
                 {/* Two-column: YouTube + Instagram */}
@@ -63,11 +63,11 @@ const ContentCreator = () => {
                             </div>
 
                             <p className="text-gray-400 leading-relaxed">
-                                Cinematic travel vlogs, tech deep-dives, and behind-the-scenes production content. Every video is a visual story.
+                                Honest, in-depth reviews of smartphones, cameras, and laptops — helping you pick the right gear for your budget. No fluff, just real-world insights.
                             </p>
 
                             <div className="flex flex-wrap gap-2">
-                                {['Travel Films', 'Tech Reviews', 'Vlogs', 'BTS Content'].map((tag) => (
+                                {['Smartphone Reviews', 'Camera Reviews', 'Laptop Reviews', 'Buying Guides'].map((tag) => (
                                     <span
                                         key={tag}
                                         className="px-3 py-1 rounded-full text-xs font-medium bg-red-500/10 text-red-400 border border-red-500/20"
@@ -113,11 +113,11 @@ const ContentCreator = () => {
                             </div>
 
                             <p className="text-gray-400 leading-relaxed">
-                                Visual stories, reels, and curated photography — a daily feed of moments captured through a creative lens.
+                                Tech tips, photography tutorials, gear reels, and behind-the-scenes moments — follow along to level up your photography game.
                             </p>
 
                             <div className="flex flex-wrap gap-2">
-                                {['Reels', 'Photography', 'Stories', 'Edits'].map((tag) => (
+                                {['Tech Tips', 'Photography Tips', 'Gear Reels', 'BTS'].map((tag) => (
                                     <span
                                         key={tag}
                                         className="px-3 py-1 rounded-full text-xs font-medium bg-pink-500/10 text-pink-400 border border-pink-500/20"
