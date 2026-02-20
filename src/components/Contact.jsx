@@ -59,6 +59,18 @@ const Contact = () => {
                             </div>
                         </div>
 
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 bg-zinc-900 rounded-lg text-yellow-500">
+                                <FaInstagram size={20} />
+                            </div>
+                            <div>
+                                <h4 className="font-bold text-gray-300">Instagram</h4>
+                                <a href="https://www.instagram.com/tech_in_air_/" target="_blank" rel="noopener noreferrer" className="text-lg hover:text-yellow-500 transition-colors">
+                                    @tech_in_air_
+                                </a>
+                            </div>
+                        </div>
+
                         <div className="pt-8 border-t border-gray-800 mt-8 relative z-10">
                             <h4 className="font-bold text-gray-300 mb-4 text-center">Follow Me</h4>
                             <div className="flex gap-4 justify-center">
