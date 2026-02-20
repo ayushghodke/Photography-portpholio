@@ -5,7 +5,7 @@ import { FaTimes, FaExpand } from 'react-icons/fa'
 import Button from './Button'
 
 // Defined categories as requested
-const categories = ['Portrait', 'Still Captures'];
+const categories = ['Portrait', 'Still Captures', 'All Pictures'];
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null)
@@ -13,7 +13,7 @@ const Gallery = () => {
     const [activeCategory, setActiveCategory] = useState('Portrait')
 
     const filteredImages = useMemo(() => {
-        // Filter strictly by the active category
+        if (activeCategory === 'All Pictures') return galleryImages;
         return galleryImages.filter(img => img.category === activeCategory);
     }, [activeCategory]);
 
@@ -50,8 +50,8 @@ const Gallery = () => {
                             key={category}
                             onClick={() => { setActiveCategory(category); setVisibleCount(9); }}
                             className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all border ${activeCategory === category
-                                    ? 'bg-yellow-500 text-black border-yellow-500'
-                                    : 'bg-transparent text-gray-400 border-gray-700 hover:border-white hover:text-white'
+                                ? 'bg-yellow-500 text-black border-yellow-500'
+                                : 'bg-transparent text-gray-400 border-gray-700 hover:border-white hover:text-white'
                                 }`}
                         >
                             {category}

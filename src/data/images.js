@@ -1,13 +1,5 @@
 export const galleryImages = [
     {
-        "src": "20241012_181024.webp",
-        "category": "General"
-    },
-    {
-        "src": "20241012_181530.webp",
-        "category": "General"
-    },
-    {
         "src": "20241118_185456.webp",
         "category": "General"
     },
