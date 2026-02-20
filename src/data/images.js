@@ -84,63 +84,39 @@ export const galleryImages = [
         "category": "General"
     },
     {
-        "src": "Portrait/20241125_164943.webp",
+        "src": "Portrait/1.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20241125_171949.webp",
+        "src": "Portrait/2.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20241205_092605.webp",
+        "src": "Portrait/3.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20241208_193802.webp",
+        "src": "Portrait/4.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20241208_194126.webp",
+        "src": "Portrait/5.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20250104_083542.webp",
+        "src": "Portrait/6.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20250105_102635.webp",
+        "src": "Portrait/7.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20250909_154635.webp",
+        "src": "Portrait/8.webp",
         "category": "Portrait"
     },
     {
-        "src": "Portrait/20251001_111226.webp",
-        "category": "Portrait"
-    },
-    {
-        "src": "Portrait/20251004_075939.webp",
-        "category": "Portrait"
-    },
-    {
-        "src": "Portrait/20260107_174715.webp",
-        "category": "Portrait"
-    },
-    {
-        "src": "Portrait/20260112_100822.webp",
-        "category": "Portrait"
-    },
-    {
-        "src": "Portrait/20260209_143442.webp",
-        "category": "Portrait"
-    },
-    {
-        "src": "Portrait/20260209_203424.webp",
-        "category": "Portrait"
-    },
-    {
-        "src": "Portrait/20260210_135039.webp",
+        "src": "Portrait/9.webp",
         "category": "Portrait"
     },
     {
