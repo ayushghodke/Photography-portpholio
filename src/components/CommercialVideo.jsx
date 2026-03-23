@@ -28,8 +28,8 @@ const CommercialVideo = () => {
                             <div className="relative w-full max-w-sm" style={{ paddingBottom: 'min(177.78%, 85vh)' }}>
                                 <iframe
                                     className="absolute inset-0 w-full h-full rounded-xl"
-                                    src="https://www.youtube.com/embed/EH-4TZOBVAI"
-                                    title="Girumukh Commercial — Ayush Ghodke"
+                                    src="https://www.youtube.com/embed/tQdfr0r4b7c"
+                                    title="Gurumukh Commercial — Ayush Ghodke"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                 />
