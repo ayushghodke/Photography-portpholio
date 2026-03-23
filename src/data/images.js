@@ -130,5 +130,17 @@ export const galleryImages = [
     {
         "src": "Still Captures/20260110_093606.webp",
         "category": "Still Captures"
+    },
+    {
+        "src": "20260221_180552.jpg",
+        "category": "Still Captures"
+    },
+    {
+        "src": "20260321_165152.jpg",
+        "category": "Still Captures"
+    },
+    {
+        "src": "20260321_170226.jpg",
+        "category": "Still Captures"
     }
 ];
