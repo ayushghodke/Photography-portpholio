@@ -8,7 +8,7 @@ const Footer = () => {
                 {/* Brand */}
                 <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tighter text-white uppercase">
                     <FaCamera className="text-yellow-500" />
-                    <span>Ayush<span className="text-yellow-500">Ghodke</span></span>
+                    <span>Ayush<span className="text-yellow-500">AirLens</span></span>
                 </a>
 
                 {/* Social Icons */}
@@ -36,7 +36,7 @@ const Footer = () => {
                 {/* Copyright */}
                 <div>
                     <p className="text-gray-600 text-sm">
-                        &copy; {new Date().getFullYear()} Ayush Ghodke. All rights reserved.
+                        &copy; {new Date().getFullYear()} Ayush AirLens. All rights reserved.
                     </p>
                     <p className="text-gray-800 text-xs mt-1">
                         Photographer · Videographer · Content Creator

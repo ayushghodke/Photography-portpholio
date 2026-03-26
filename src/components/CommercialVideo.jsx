@@ -29,7 +29,7 @@ const CommercialVideo = () => {
                                 <iframe
                                     className="absolute inset-0 w-full h-full rounded-xl"
                                     src="https://www.youtube.com/embed/tQdfr0r4b7c"
-                                    title="Gurumukh Commercial — Ayush Ghodke"
+                                    title="Gurumukh Commercial — Ayush AirLens"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                 />

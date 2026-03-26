@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <a href="#" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-white uppercase">
                     <FaCamera className="text-yellow-500" />
-                    <span>Ayush<span className="text-yellow-500">Ghodke</span></span>
+                    <span>Ayush<span className="text-yellow-500">AirLens</span></span>
                 </a>
 
                 {/* Desktop Menu */}
