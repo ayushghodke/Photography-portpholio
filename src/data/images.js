@@ -100,6 +100,18 @@ export const galleryImages = [
         "category": "Portrait"
     },
     {
+        "src": "20260221_180552.jpg",
+        "category": "Portrait"
+    },
+    {
+        "src": "20260321_165152.jpg",
+        "category": "Portrait"
+    },
+    {
+        "src": "20260321_170226.jpg",
+        "category": "Portrait"
+    },
+    {
         "src": "Portrait/7.webp",
         "category": "Portrait"
     },
@@ -130,17 +142,5 @@ export const galleryImages = [
     {
         "src": "Still Captures/20260110_093606.webp",
         "category": "Still Captures"
-    },
-    {
-        "src": "20260221_180552.jpg",
-        "category": "Portrait"
-    },
-    {
-        "src": "20260321_165152.jpg",
-        "category": "Portrait"
-    },
-    {
-        "src": "20260321_170226.jpg",
-        "category": "Portrait"
     }
 ];
