@@ -59,7 +59,7 @@ const Gallery = () => {
                     ))}
                 </div>
 
-                <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <motion.div layout className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6">
                     <AnimatePresence mode='popLayout'>
                         {filteredImages.slice(0, visibleCount).map((image) => (
                             <motion.div
@@ -70,7 +70,7 @@ const Gallery = () => {
                                 transition={{ duration: 0.3 }}
                                 key={image.src}
                                 onClick={() => setSelectedImage(image.src)}
-                                className="relative aspect-[3/4] cursor-pointer group overflow-hidden rounded-lg bg-gray-900"
+                                className="relative aspect-square md:aspect-[3/4] cursor-pointer group overflow-hidden md:rounded-lg bg-gray-900"
                             >
                                 <img
                                     src={`/images/${image.src}`}
@@ -79,10 +79,10 @@ const Gallery = () => {
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                    <span className="bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest absolute top-4 left-4">
+                                    <span className="bg-yellow-500 text-black px-2 md:px-4 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest absolute top-2 left-2 md:top-4 md:left-4">
                                         {image.category}
                                     </span>
-                                    <FaExpand className="text-white text-3xl" />
+                                    <FaExpand className="text-white text-xl md:text-3xl" />
                                 </div>
                             </motion.div>
                         ))}
