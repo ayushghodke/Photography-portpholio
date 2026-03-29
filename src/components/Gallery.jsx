@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { galleryImages } from '../data/images'
 import { FaTimes, FaExpand } from 'react-icons/fa'
@@ -11,6 +11,26 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null)
     const [visibleCount, setVisibleCount] = useState(9)
     const [activeCategory, setActiveCategory] = useState('Portrait')
+
+    useEffect(() => {
+        const handlePopState = () => {
+            setSelectedImage(null);
+        };
+        window.addEventListener('popstate', handlePopState);
+        return () => window.removeEventListener('popstate', handlePopState);
+    }, []);
+
+    const openLightbox = (imageSrc) => {
+        setSelectedImage(imageSrc);
+        window.history.pushState({ lightbox: 'open' }, '');
+    };
+
+    const closeLightbox = () => {
+        setSelectedImage(null);
+        if (window.history.state && window.history.state.lightbox === 'open') {
+            window.history.back();
+        }
+    };
 
     const filteredImages = useMemo(() => {
         if (activeCategory === 'All Pictures') return galleryImages;
@@ -70,7 +90,7 @@ const Gallery = () => {
                                     exit={{ opacity: 0, scale: 0.9 }}
                                     transition={{ duration: 0.3 }}
                                     key={image.src}
-                                    onClick={() => setSelectedImage(image.src)}
+                                    onClick={() => openLightbox(image.src)}
                                     className="relative aspect-[3/4] cursor-pointer group overflow-hidden md:rounded-lg bg-gray-900"
                                 >
                                     <img
@@ -114,11 +134,11 @@ const Gallery = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         className="fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4"
-                        onClick={() => setSelectedImage(null)}
+                        onClick={closeLightbox}
                     >
                         <button
                             className="absolute top-6 right-6 text-white text-4xl hover:text-yellow-500 transition-colors"
-                            onClick={() => setSelectedImage(null)}
+                            onClick={closeLightbox}
                         >
                             <FaTimes />
                         </button>
