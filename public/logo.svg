@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Dark background circle -->
+  <circle cx="50" cy="50" r="46" fill="#050505" stroke="#EAB308" stroke-width="4"/>
+  
+  <!-- Lens rings -->
+  <circle cx="50" cy="50" r="32" fill="none" stroke="#333333" stroke-width="3"/>
+  <circle cx="50" cy="50" r="24" fill="none" stroke="#EAB308" stroke-width="2"/>
+  
+  <!-- Center lens reflection / glass -->
+  <circle cx="50" cy="50" r="12" fill="#1a1a1a" stroke="#EAB308" stroke-width="4"/>
+  
+  <!-- Light reflections to give it a sleek, glassy look -->
+  <circle cx="53" cy="47" r="3.5" fill="#EAB308"/>
+  <circle cx="47" cy="52" r="1.5" fill="#FFFFFF"/>
+</svg>
