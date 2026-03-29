@@ -7,6 +7,7 @@ import Gallery from './components/Gallery'
 import CommercialVideo from './components/CommercialVideo'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
+      <SpeedInsights />
     </div>
   )
 }
