@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 const Button = ({ children, onClick, variant = 'primary', className = '' }) => {
-    const baseStyles = 'px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none'
+    const baseStyles = 'px-8 py-3 rounded-full font-medium transition-colors duration-300 focus:outline-none'
 
     const variants = {
         primary: 'bg-yellow-500 text-black hover:bg-yellow-400 shadow-lg shadow-yellow-500/20',

@@ -10,6 +10,11 @@ const Hero = () => {
                     src="/images/20260210_135039.webp"
                     alt="Cinematography Background"
                     className="w-full h-full object-cover opacity-60"
+                    fetchpriority="high"
+                    loading="eager"
+                    decoding="async"
+                    width="1920"
+                    height="1080"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black"></div>
             </div>

@@ -8,12 +8,24 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false)
 
     useEffect(() => {
+        let ticking = false
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50)
+            if (ticking) return
+            ticking = true
+            requestAnimationFrame(() => {
+                setScrolled(window.scrollY > 50)
+                ticking = false
+            })
         }
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll, { passive: true })
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+
+    useEffect(() => {
+        const prev = document.body.style.overflow
+        document.body.style.overflow = isOpen ? 'hidden' : prev
+        return () => { document.body.style.overflow = prev }
+    }, [isOpen])
 
     const navLinks = [
         { name: 'Services', href: '#motion' },

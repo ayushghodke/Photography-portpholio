@@ -27,6 +27,7 @@ const CommercialVideo = () => {
                         <div className="flex justify-center bg-black py-6">
                             <div className="relative w-full max-w-sm" style={{ paddingBottom: 'min(177.78%, 85vh)' }}>
                                 <iframe
+                                    loading="lazy"
                                     className="absolute inset-0 w-full h-full rounded-xl"
                                     src="https://www.youtube.com/embed/tQdfr0r4b7c"
                                     title="Gurumukh Commercial — Ayush AirLens"
@@ -58,6 +59,7 @@ const CommercialVideo = () => {
                         <div className="flex justify-center bg-black py-6">
                             <div className="relative w-full max-w-sm" style={{ paddingBottom: 'min(177.78%, 85vh)' }}>
                                 <iframe
+                                    loading="lazy"
                                     className="absolute inset-0 w-full h-full rounded-xl"
                                     src="https://www.youtube.com/embed/Oys-f05--7w"
                                     title="Content Creation"

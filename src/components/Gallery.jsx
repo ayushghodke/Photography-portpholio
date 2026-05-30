@@ -20,6 +20,20 @@ const Gallery = () => {
         return () => window.removeEventListener('popstate', handlePopState);
     }, []);
 
+    useEffect(() => {
+        if (!selectedImage) return;
+        const handleKey = (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        };
+        const prevOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        window.addEventListener('keydown', handleKey);
+        return () => {
+            window.removeEventListener('keydown', handleKey);
+            document.body.style.overflow = prevOverflow;
+        };
+    }, [selectedImage]);
+
     const openLightbox = (imageSrc) => {
         setSelectedImage(imageSrc);
         window.history.pushState({ lightbox: 'open' }, '');
@@ -82,7 +96,7 @@ const Gallery = () => {
                 <div className="-mx-6 md:mx-0">
                     <motion.div layout className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6">
                         <AnimatePresence mode='popLayout'>
-                            {filteredImages.slice(0, visibleCount).map((image) => (
+                            {filteredImages.slice(0, visibleCount).map((image, index) => (
                                 <motion.div
                                     layout
                                     initial={{ opacity: 0, scale: 0.9 }}
@@ -97,7 +111,10 @@ const Gallery = () => {
                                         src={`/images/${image.src}`}
                                         alt={`Portfolio ${image.category}`}
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
-                                        loading="lazy"
+                                        loading={index < 6 ? 'eager' : 'lazy'}
+                                        decoding="async"
+                                        width="600"
+                                        height="800"
                                     />
                                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                         <span className="bg-yellow-500 text-black px-2 md:px-4 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest absolute top-2 left-2 md:top-4 md:left-4">
