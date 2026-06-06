@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { FaBars, FaTimes, FaCamera } from 'react-icons/fa'
+import { FaBars, FaTimes, FaCamera } from './icons'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from './Button'
 

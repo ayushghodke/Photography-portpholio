@@ -1,4 +1,4 @@
-import { FaYoutube, FaInstagram, FaCamera } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaCamera } from './icons'
 
 const Footer = () => {
     return (

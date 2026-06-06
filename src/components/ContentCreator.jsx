@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaYoutube, FaInstagram, FaExternalLinkAlt, FaPlay } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaExternalLinkAlt, FaPlay } from './icons'
 
 const ContentCreator = () => {
     return (

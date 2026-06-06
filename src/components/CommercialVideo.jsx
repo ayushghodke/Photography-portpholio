@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import YouTubeFacade from './YouTubeFacade'
 
 const CommercialVideo = () => {
     return (
@@ -26,13 +27,10 @@ const CommercialVideo = () => {
                         {/* YouTube Shorts embed — vertical 9:16 */}
                         <div className="flex justify-center bg-black py-6">
                             <div className="relative w-full max-w-sm" style={{ paddingBottom: 'min(177.78%, 85vh)' }}>
-                                <iframe
-                                    loading="lazy"
-                                    className="absolute inset-0 w-full h-full rounded-xl"
-                                    src="https://www.youtube.com/embed/tQdfr0r4b7c"
+                                <YouTubeFacade
+                                    id="tQdfr0r4b7c"
                                     title="Gurumukh Commercial — Ayush AirLens"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
+                                    className="absolute inset-0 w-full h-full rounded-xl"
                                 />
                             </div>
                         </div>
@@ -58,13 +56,10 @@ const CommercialVideo = () => {
                         {/* YouTube Shorts embed — vertical 9:16 */}
                         <div className="flex justify-center bg-black py-6">
                             <div className="relative w-full max-w-sm" style={{ paddingBottom: 'min(177.78%, 85vh)' }}>
-                                <iframe
-                                    loading="lazy"
-                                    className="absolute inset-0 w-full h-full rounded-xl"
-                                    src="https://www.youtube.com/embed/Oys-f05--7w"
+                                <YouTubeFacade
+                                    id="Oys-f05--7w"
                                     title="Content Creation"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
+                                    className="absolute inset-0 w-full h-full rounded-xl"
                                 />
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaPlay, FaArrowDown } from 'react-icons/fa'
+import { FaPlay, FaArrowDown } from './icons'
 
 const Hero = () => {
     return (
@@ -8,6 +8,8 @@ const Hero = () => {
             <div className="absolute inset-0 z-0">
                 <img
                     src="/images/20260210_135039.webp"
+                    srcSet="/images/20260210_135039-400w.webp 400w, /images/20260210_135039-800w.webp 800w, /images/20260210_135039-1200w.webp 1200w, /images/20260210_135039.webp 1920w"
+                    sizes="100vw"
                     alt="Cinematography Background"
                     className="w-full h-full object-cover opacity-60"
                     fetchpriority="high"

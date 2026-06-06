@@ -1,8 +1,9 @@
 import { useState, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { galleryImages } from '../data/images'
-import { FaTimes, FaExpand } from 'react-icons/fa'
+import { FaTimes, FaExpand } from './icons'
 import Button from './Button'
+import { srcSetFor } from '../utils/srcset'
 
 // Defined categories as requested
 const categories = ['Portrait', 'Still Captures', 'All Pictures'];
@@ -109,6 +110,8 @@ const Gallery = () => {
                                 >
                                     <img
                                         src={`/images/${image.src}`}
+                                        srcSet={srcSetFor(image.src)}
+                                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 33vw"
                                         alt={`Portfolio ${image.category}`}
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                                         loading={index < 6 ? 'eager' : 'lazy'}
@@ -164,6 +167,8 @@ const Gallery = () => {
                             animate={{ scale: 1 }}
                             exit={{ scale: 0.8 }}
                             src={`/images/${selectedImage}`}
+                            srcSet={srcSetFor(selectedImage)}
+                            sizes="100vw"
                             alt="Selected"
                             className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl shadow-black"
                             onClick={(e) => e.stopPropagation()}

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaInstagram } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaInstagram } from './icons'
 
 const Contact = () => {
     return (

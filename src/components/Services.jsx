@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaCamera, FaPhotoVideo, FaFilm, FaArrowRight } from 'react-icons/fa'
+import { FaCamera, FaPhotoVideo, FaFilm, FaArrowRight } from './icons'
 
 const services = [
     {
