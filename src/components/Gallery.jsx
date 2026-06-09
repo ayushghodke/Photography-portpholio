@@ -47,6 +47,11 @@ const Gallery = () => {
         }
     };
 
+    const handleCloseClick = (e) => {
+        e.stopPropagation();
+        closeLightbox();
+    };
+
     const filteredImages = useMemo(() => {
         if (activeCategory === 'All Pictures') return galleryImages;
         return galleryImages.filter(img => img.category === activeCategory);
@@ -157,8 +162,9 @@ const Gallery = () => {
                         onClick={closeLightbox}
                     >
                         <button
-                            className="absolute top-6 right-6 text-white text-4xl hover:text-yellow-500 transition-colors"
-                            onClick={closeLightbox}
+                            className="absolute top-6 right-6 text-white text-4xl hover:text-yellow-500 transition-colors z-10"
+                            onClick={handleCloseClick}
+                            aria-label="Close lightbox"
                         >
                             <FaTimes />
                         </button>

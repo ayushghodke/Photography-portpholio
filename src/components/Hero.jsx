@@ -8,15 +8,13 @@ const Hero = () => {
             <div className="absolute inset-0 z-0">
                 <img
                     src="/images/20260210_135039.webp"
-                    srcSet="/images/20260210_135039-400w.webp 400w, /images/20260210_135039-800w.webp 800w, /images/20260210_135039-1200w.webp 1200w, /images/20260210_135039.webp 1920w"
-                    sizes="100vw"
                     alt="Cinematography Background"
                     className="w-full h-full object-cover opacity-60"
                     fetchpriority="high"
                     loading="eager"
                     decoding="async"
                     width="1920"
-                    height="1080"
+                    height="2560"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black"></div>
             </div>
